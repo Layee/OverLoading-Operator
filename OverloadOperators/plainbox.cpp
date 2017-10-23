@@ -43,6 +43,6 @@ PlainBox<ItemType> operator+(const PlainBox<ItemType>& b1, const PlainBox<ItemTy
 template <class ItemType>
 bool PlainBox<ItemType>:: operator==(const PlainBox<ItemType>& b) {  
 	  
-	return (this.getItem() == b.getItem());
+	return (item == b.getItem());
 
 } //member function

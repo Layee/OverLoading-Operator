@@ -15,11 +15,14 @@ int main()
 	double secretName = 6.5;
 	numberBox.setItem(health);
 	nameBox.setItem(secretName);
-	cout << "numberBox.getItem() = " << numberBox.getItem() <<endl;
-	cout << "nameBox() = " << nameBox.getItem() <<endl;
 
-	PlainBox<double> newBox = numberBox + nameBox;
-	cout << newBox.getItem() << endl;
+	PlainBox<double> addBox = numberBox + nameBox;
+	cout << addBox.getItem() << endl;
+
+	PlainBox<double> compareBox = numberBox == nameBox;
+	cout << compareBox.getItem() << endl;
+
+	cout << numberBox;
 	system("pause");
 
 	
@@ -27,6 +30,10 @@ int main()
 } // end main
 
   /*
-  numberBox.getItem() = 6.5
-  nameBox() = Rumpelstiltskin
+  Outputs 
+
+ 13
+1
+6.5
+Press any key to continue . . .
   */

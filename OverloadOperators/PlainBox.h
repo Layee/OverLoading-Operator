@@ -34,7 +34,8 @@ public:
 
 	// FRIEND FUNCTION
 	friend ostream& operator<<(ostream& outs, const PlainBox<ItemType>& source) {
-		outs << source.getItem << "Ostream overload" << endl;
+		outs << source.getItem() << endl;
+		return outs;
 	}
 
 	bool operator==(const PlainBox<ItemType>& b); //member function
